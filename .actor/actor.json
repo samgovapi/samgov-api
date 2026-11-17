@@ -1,0 +1,14 @@
+{
+  "actorSpecification": 1,
+  "name": "samgov-api",
+  "title": "SAM.gov API: Contract Opportunities, Entities, Exclusions & Awards",
+  "description": "SAM.gov and USAspending data as clean rows: open federal contract opportunities by NAICS, set-aside and deadline, registered entities by UEI or CAGE with expiry, exclusions and debarments, and contract awards. No SAM.gov rate limit, no scraping. Free preview with no key.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "output": "./output_schema.json"
+}

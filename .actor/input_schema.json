@@ -1,0 +1,215 @@
+{
+  "title": "SAM.gov API input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "apiKey": {
+      "title": "API key (optional)",
+      "type": "string",
+      "editor": "textfield",
+      "isSecret": true,
+      "description": "Your samgovapi.io key. Free plan with 10,000 credits a month, no card: https://samgovapi.io/sign-up. Leave empty for a free preview of up to 5 real rows."
+    },
+    "dataset": {
+      "title": "What to fetch",
+      "type": "string",
+      "editor": "select",
+      "default": "opportunities",
+      "prefill": "opportunities",
+      "enum": ["opportunities", "entities", "exclusions", "awards"],
+      "enumTitles": ["Contract opportunities (bids)", "Registered entities (UEI, CAGE)", "Exclusions (debarred and suspended)", "Contract awards (USAspending)"],
+      "description": "Contract opportunities are SAM.gov notices you can bid on. Entities are SAM.gov registrations with UEI, CAGE, NAICS and expiry. Exclusions are debarred, suspended and restricted parties. Awards are federal contract awards from USAspending."
+    },
+    "keyword": {
+      "title": "Keyword or name",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Opportunities: words in the title or the solicitation number. Entities: legal or DBA name, UEI or CAGE. Exclusions: name contains. Awards: recipient name contains."
+    },
+    "naics": {
+      "title": "NAICS code",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "541512",
+      "description": "Opportunities and awards: NAICS code or prefix, for example 5415. Entities: 6-digit NAICS code the entity lists."
+    },
+    "psc": {
+      "title": "PSC code",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Product and service code, for example D399 or R425."
+    },
+    "setAside": {
+      "title": "Set-aside",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Opportunities: set-aside code such as SBA, 8A, WOSB, EDWOSB, SDVOSBC or HZC. Entities: business type or SBA program code such as 8A or A2."
+    },
+    "state": {
+      "title": "State",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Two-letter state: place of performance for opportunities, physical address for entities."
+    },
+    "agency": {
+      "title": "Agency",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Opportunities and awards: department, sub-tier or awarding agency name, for example Veterans Affairs."
+    },
+    "agencyCode": {
+      "title": "Agency code",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Opportunities and awards: agency code such as 097 (Defense) or 047 (GSA)."
+    },
+    "noticeType": {
+      "title": "Notice type",
+      "type": "string",
+      "editor": "select",
+      "default": "all",
+      "prefill": "all",
+      "enum": ["all", "Solicitation", "Combined Synopsis/Solicitation", "Presolicitation", "Sources Sought", "Special Notice", "Award Notice", "Justification", "Sale of Surplus Property", "Intent to Bundle Requirements (DoD-Funded)"],
+      "enumTitles": ["All notice types", "Solicitation", "Combined synopsis/solicitation", "Presolicitation", "Sources sought", "Special notice", "Award notice", "Justification", "Sale of surplus property", "Intent to bundle requirements"],
+      "description": "Opportunities: the SAM.gov notice type."
+    },
+    "openOnly": {
+      "title": "Open bids only",
+      "type": "boolean",
+      "default": true,
+      "description": "Opportunities: only active notices that are not award notices and whose response deadline has not passed."
+    },
+    "postedFrom": {
+      "title": "Posted from",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Opportunities: posted on or after this date, YYYY-MM-DD."
+    },
+    "postedTo": {
+      "title": "Posted to",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Opportunities: posted on or before this date, YYYY-MM-DD."
+    },
+    "deadlineFrom": {
+      "title": "Deadline from",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Opportunities: response deadline on or after this date, YYYY-MM-DD."
+    },
+    "deadlineTo": {
+      "title": "Deadline to",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Opportunities: response deadline on or before this date, YYYY-MM-DD. Use it for bids closing this week."
+    },
+    "sort": {
+      "title": "Sort",
+      "type": "string",
+      "editor": "select",
+      "default": "posted",
+      "prefill": "posted",
+      "enum": ["posted", "deadline"],
+      "enumTitles": ["Newest posted first", "Closing soonest first"],
+      "description": "Opportunities: order of the results."
+    },
+    "entityStatus": {
+      "title": "Registration status",
+      "type": "string",
+      "editor": "select",
+      "default": "any",
+      "prefill": "active",
+      "enum": ["any", "active", "expired"],
+      "enumTitles": ["Any status", "Active", "Expired"],
+      "description": "Entities: SAM.gov registration status."
+    },
+    "expiringWithinDays": {
+      "title": "Expiring within (days)",
+      "type": "integer",
+      "editor": "number",
+      "minimum": 1,
+      "maximum": 3650,
+      "description": "Entities: registrations that expire within this many days. Awards: contracts whose potential end date falls within this many days (likely recompetes)."
+    },
+    "uei": {
+      "title": "UEI",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Exclusions: exact UEI. Awards: recipient UEI."
+    },
+    "cage": {
+      "title": "CAGE code",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Exclusions: exact CAGE code."
+    },
+    "classification": {
+      "title": "Exclusion classification",
+      "type": "string",
+      "editor": "select",
+      "default": "any",
+      "prefill": "any",
+      "enum": ["any", "Firm", "Individual", "Vessel", "Special Entity Designation"],
+      "enumTitles": ["Any classification", "Firm", "Individual", "Vessel", "Special entity designation"],
+      "description": "Exclusions: kind of excluded party."
+    },
+    "activeOnly": {
+      "title": "Active exclusions only",
+      "type": "boolean",
+      "default": true,
+      "description": "Exclusions: leave out terminated exclusions."
+    },
+    "fiscalYear": {
+      "title": "Fiscal year",
+      "type": "integer",
+      "editor": "number",
+      "minimum": 2000,
+      "maximum": 2100,
+      "description": "Awards: federal fiscal year of the award action."
+    },
+    "minAmount": {
+      "title": "Minimum obligated ($)",
+      "type": "integer",
+      "editor": "number",
+      "minimum": 0,
+      "description": "Awards: obligated at least this many dollars."
+    },
+    "actionFrom": {
+      "title": "Action date from",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Awards: action date on or after, YYYY-MM-DD."
+    },
+    "actionTo": {
+      "title": "Action date to",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Awards: action date on or before, YYYY-MM-DD."
+    },
+    "vehicle": {
+      "title": "Contract vehicle",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Awards: contract vehicle name, for example OASIS or SEWP."
+    },
+    "maxRequests": {
+      "title": "Max API requests",
+      "type": "integer",
+      "editor": "number",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 10000,
+      "description": "Stop after this many requests on your samgovapi.io plan. Each page of up to 100 rows is one request."
+    },
+    "maxItems": {
+      "title": "Max items",
+      "type": "integer",
+      "editor": "number",
+      "default": 500,
+      "prefill": 100,
+      "minimum": 1,
+      "maximum": 100000,
+      "description": "Stop after this many rows."
+    }
+  }
+}

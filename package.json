@@ -1,0 +1,23 @@
+{
+  "name": "samgov-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Apify actor: SAM.gov contract opportunities, entities, exclusions and USAspending contract awards, read from the documented samgovapi.io API.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "apify": "^3.2.6"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samgovapi/samgov-api"
+  }
+}

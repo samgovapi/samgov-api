@@ -1,0 +1,13 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "SAM.gov API output",
+  "description": "Contract opportunities, entities, exclusions or awards from this run.",
+  "properties": {
+    "results": {
+      "type": "string",
+      "title": "Results",
+      "description": "All rows from this run as a dataset.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}

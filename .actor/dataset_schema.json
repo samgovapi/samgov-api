@@ -1,0 +1,712 @@
+{
+  "actorSpecification": 1,
+  "title": "SAM.gov data",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "type": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "department": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "sub_tier": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "office": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "posted_date": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "response_deadline": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "set_aside": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "naics": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "psc": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "pop_state": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "solicitation_number": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "notice_id": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "url": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "legal_name": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "dba_name": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "uei": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "cage": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "registration_status": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "expiration_date": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "entity_type": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "city": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "state": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "primary_naics": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "website": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "name": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "classification": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "exclusion_type": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "exclusion_program": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "excluding_agency": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "active_date": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "termination_date": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "record_status": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "address_country": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "checked": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "excluded": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "answer": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "recipient_name": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "recipient_uei": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "awarding_agency": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "awarding_sub_agency": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "piid": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "award_type": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "description": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "action_date": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "potential_end_date": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "obligated": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      },
+      "potential_value": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Contract opportunities",
+      "description": "SAM.gov notices with deadline, set-aside, NAICS and link.",
+      "transformation": {
+        "fields": [
+          "title",
+          "type",
+          "department",
+          "sub_tier",
+          "office",
+          "posted_date",
+          "response_deadline",
+          "set_aside",
+          "naics",
+          "psc",
+          "pop_state",
+          "solicitation_number",
+          "notice_id",
+          "url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "title": {
+            "label": "Title",
+            "format": "text"
+          },
+          "type": {
+            "label": "Type",
+            "format": "text"
+          },
+          "department": {
+            "label": "Department",
+            "format": "text"
+          },
+          "sub_tier": {
+            "label": "Sub tier",
+            "format": "text"
+          },
+          "office": {
+            "label": "Office",
+            "format": "text"
+          },
+          "posted_date": {
+            "label": "Posted",
+            "format": "date"
+          },
+          "response_deadline": {
+            "label": "Deadline",
+            "format": "date"
+          },
+          "set_aside": {
+            "label": "Set aside",
+            "format": "text"
+          },
+          "naics": {
+            "label": "NAICS",
+            "format": "text"
+          },
+          "psc": {
+            "label": "PSC",
+            "format": "text"
+          },
+          "pop_state": {
+            "label": "State",
+            "format": "text"
+          },
+          "solicitation_number": {
+            "label": "Solicitation number",
+            "format": "text"
+          },
+          "notice_id": {
+            "label": "Notice id",
+            "format": "text"
+          },
+          "url": {
+            "label": "Link",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "entities": {
+      "title": "Registered entities",
+      "description": "SAM.gov registrations with UEI, CAGE, status and expiry.",
+      "transformation": {
+        "fields": [
+          "legal_name",
+          "dba_name",
+          "uei",
+          "cage",
+          "registration_status",
+          "expiration_date",
+          "entity_type",
+          "city",
+          "state",
+          "primary_naics",
+          "website"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "legal_name": {
+            "label": "Legal name",
+            "format": "text"
+          },
+          "dba_name": {
+            "label": "Dba name",
+            "format": "text"
+          },
+          "uei": {
+            "label": "UEI",
+            "format": "text"
+          },
+          "cage": {
+            "label": "CAGE",
+            "format": "text"
+          },
+          "registration_status": {
+            "label": "Registration status",
+            "format": "text"
+          },
+          "expiration_date": {
+            "label": "Expires",
+            "format": "date"
+          },
+          "entity_type": {
+            "label": "Entity type",
+            "format": "text"
+          },
+          "city": {
+            "label": "City",
+            "format": "text"
+          },
+          "state": {
+            "label": "State",
+            "format": "text"
+          },
+          "primary_naics": {
+            "label": "Primary NAICS",
+            "format": "text"
+          },
+          "website": {
+            "label": "Website",
+            "format": "text"
+          }
+        }
+      }
+    },
+    "exclusions": {
+      "title": "Exclusions",
+      "description": "Debarred, suspended and restricted parties.",
+      "transformation": {
+        "fields": [
+          "name",
+          "classification",
+          "uei",
+          "cage",
+          "exclusion_type",
+          "exclusion_program",
+          "excluding_agency",
+          "active_date",
+          "termination_date",
+          "record_status",
+          "address_country",
+          "checked",
+          "excluded",
+          "answer"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "name": {
+            "label": "Name",
+            "format": "text"
+          },
+          "classification": {
+            "label": "Classification",
+            "format": "text"
+          },
+          "uei": {
+            "label": "UEI",
+            "format": "text"
+          },
+          "cage": {
+            "label": "CAGE",
+            "format": "text"
+          },
+          "exclusion_type": {
+            "label": "Exclusion type",
+            "format": "text"
+          },
+          "exclusion_program": {
+            "label": "Exclusion program",
+            "format": "text"
+          },
+          "excluding_agency": {
+            "label": "Excluding agency",
+            "format": "text"
+          },
+          "active_date": {
+            "label": "Active",
+            "format": "date"
+          },
+          "termination_date": {
+            "label": "Terminates",
+            "format": "date"
+          },
+          "record_status": {
+            "label": "Record status",
+            "format": "text"
+          },
+          "address_country": {
+            "label": "Address country",
+            "format": "text"
+          },
+          "checked": {
+            "label": "Checked",
+            "format": "text"
+          },
+          "excluded": {
+            "label": "Excluded",
+            "format": "boolean"
+          },
+          "answer": {
+            "label": "Answer",
+            "format": "text"
+          }
+        }
+      }
+    },
+    "awards": {
+      "title": "Contract awards",
+      "description": "Federal contract awards from USAspending.",
+      "transformation": {
+        "fields": [
+          "recipient_name",
+          "recipient_uei",
+          "awarding_agency",
+          "awarding_sub_agency",
+          "piid",
+          "award_type",
+          "naics",
+          "psc",
+          "description",
+          "action_date",
+          "potential_end_date",
+          "obligated",
+          "potential_value",
+          "set_aside"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "recipient_name": {
+            "label": "Recipient name",
+            "format": "text"
+          },
+          "recipient_uei": {
+            "label": "Recipient UEI",
+            "format": "text"
+          },
+          "awarding_agency": {
+            "label": "Awarding agency",
+            "format": "text"
+          },
+          "awarding_sub_agency": {
+            "label": "Awarding sub agency",
+            "format": "text"
+          },
+          "piid": {
+            "label": "PIID",
+            "format": "text"
+          },
+          "award_type": {
+            "label": "Award type",
+            "format": "text"
+          },
+          "naics": {
+            "label": "NAICS",
+            "format": "text"
+          },
+          "psc": {
+            "label": "PSC",
+            "format": "text"
+          },
+          "description": {
+            "label": "Description",
+            "format": "text"
+          },
+          "action_date": {
+            "label": "Action",
+            "format": "date"
+          },
+          "potential_end_date": {
+            "label": "Potential end",
+            "format": "date"
+          },
+          "obligated": {
+            "label": "Obligated",
+            "format": "number"
+          },
+          "potential_value": {
+            "label": "Potential value",
+            "format": "number"
+          },
+          "set_aside": {
+            "label": "Set aside",
+            "format": "text"
+          }
+        }
+      }
+    }
+  }
+}
